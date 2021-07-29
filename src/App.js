@@ -36,7 +36,7 @@ export default function App() {
           </div>
           <small>
             <a
-              href="https://github.com/celonen/updated-vanilla-weather-app"
+              href="https://github.com/celonen/react-weather"
               target="_blank"
               rel="noreferrer"
             >
