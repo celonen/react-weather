@@ -1,25 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import Search from "./Search";
+import City from "./City";
+import Temperature from "./Temperature";
+import Conditions from "./Conditions";
+import Forecast from "./Forecast";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <div className="weather-app-wrapper">
+          <div className="weather-app">
+            <Search />
+            <br />
+            <City />
+            <br />
+            <div className="row">
+              <div className="col">
+                <Temperature value={19} />
+              </div>
+              <div className="col">
+                <Conditions humidity={80} wind={10} />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col">
+                <div className="weather-forecast" id="forecast">
+                  <Forecast />
+                </div>
+              </div>
+            </div>
+          </div>
+          <small>
+            <a
+              href="https://github.com/celonen/updated-vanilla-weather-app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open-source code
+            </a>{" "}
+            by Cassandra Elonen
+          </small>
+        </div>
+      </div>
     </div>
   );
 }
 
-export default App;
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
