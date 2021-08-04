@@ -103,12 +103,6 @@ a {
   font-size: 13px;
 }
 
-.Search form {
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-}
-
 .current-degrees {
   color: rgb(33, 33, 33);
   font-size: 64px;
