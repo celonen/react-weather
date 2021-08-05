@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import Search from "./Search";
+import Weather from "./Weather";
 import City from "./City";
 import Temperature from "./Temperature";
 import Conditions from "./Conditions";
@@ -14,7 +14,7 @@ export default function App() {
       <div className="container">
         <div className="weather-app-wrapper">
           <div className="weather-app">
-            <Search />
+            <Weather />
             <br />
             <City />
             <br />
