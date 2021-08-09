@@ -9,7 +9,6 @@ export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
-    console.log(response.data);
     setWeatherData({
       ready: true,
       coordinates: response.data.coord,
@@ -46,7 +45,7 @@ export default function Weather(props) {
             <div className="col-9">
               <input
                 type="search"
-                value="Enter a city"
+                placeholder="Enter a city"
                 className="form-control"
                 autoFocus="on"
                 onChange={handleCityChange}

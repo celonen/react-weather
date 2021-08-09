@@ -8,29 +8,6 @@ code {
     monospace;
 }
 
-h1 {
-  color: #878787;
-  font-size: 24px;
-  font-weight: 100;
-  line-height: 28px;
-  margin-bottom: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  color: rgb(135, 135, 135);
-  font-size: 16px;
-  font-weight: 100;
-  line-height: 19px;
-}
-
 li:first-letter {
   text-transform: capitalize;
 }
@@ -39,83 +16,71 @@ a {
   text-decoration: none;
 }
 
-.weather-app-wrapper {
+.App {
   max-width: 600px;
   margin: 30px auto;
 }
 
-.weather-app {
-  padding: 20px;
+.App footer {
+  font-size: 11px;
+  margin: 10px 0;
+}
+
+.Weather {
+  font-family: arial, sans-serif;
   border: 1px solid #dadde1;
-  border-radius: 5px;
+  padding: 16px;
+  border-radius: 4px;
+  color: rgb(135, 135, 135);
 }
 
-.overview {
-  margin-bottom: 20px;
+.Weather h1 {
+  font-size: 24px;
+  font-weight: 100;
+  margin: 20px 0 0 0;
+  line-height: 29px;
 }
 
-.weather-temperature img {
-  margin-right: 5px;
-  float: left;
-  height: 64px;
-  width: 64px;
+.Weather ul {
+  margin: 0;
+  padding: 0;
 }
 
-.weather-temperature strong {
+.Weather li {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+  list-style: none;
+}
+
+.Weather .temperature {
+  font-weight: bold;
   color: rgb(33, 33, 33);
   font-size: 64px;
+  line-height: 64px;
+  margin-left: 5px;
   font-weight: 400;
-  line-height: 1;
+  margin-left: 10px;
 }
 
-.weather-temperature .units {
+.Weather canvas {
+  margin: 10px auto;
+}
+
+.Weather .unit {
+  color: rgb(33, 33, 33);
+  font-size: 16px;
+  font-weight: 400;
   position: relative;
-  font-size: 16px;
-  top: -34px;
-  padding: 0px;
-}
-
-.active {
-  color: rgb(33, 33, 33);
-  cursor: default;
-}
-
-.weather-temperature .active:hover {
-  text-decoration: none;
-}
-
-.Forecast {
-  margin-top: 20px;
-  text-align: center;
-  color: rgb(33, 33, 33);
-}
-
-.weather-forecast-date {
-  font-size: 16px;
-  opacity: 0.5;
-}
-
-.weather-forecast-temperature-min {
-  opacity: 0.5;
-}
-
-.weather-forecast-temperature {
-  font-size: 13px;
-}
-
-.current-degrees {
-  color: rgb(33, 33, 33);
-  font-size: 64px;
   line-height: 1;
-  font-weight: 400;
-  margin: 0px;
+  top: -34px;
 }
 
-.Temperature {
-  display: flex;
-  justify-content: left;
+.WeatherForecast {
+  text-align: center;
 }
 
-.Conditions {
-  margin-bottom: 20px;
+.WeatherForecast-temperature-min {
+  opacity: 0.6;
+  margin-left: 5px;
 }
