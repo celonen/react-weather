@@ -84,3 +84,7 @@ a {
   opacity: 0.6;
   margin-left: 5px;
 }
+
+.float-left {
+  float: left;
+}
